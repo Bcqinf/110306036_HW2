@@ -1,0 +1,107 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+	<style>
+		img{
+			border: dashed 1px;
+		}
+		h3{
+			font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
+			text-decoration: underline;
+			text-decoration-color: red;
+		}
+		strong{
+			color: midnightblue;
+		}
+		textarea{
+			font: italic;
+			font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
+			color: chocolate;
+		}
+		span{
+			color: inherit;
+		}
+		td{
+			color: blueviolet;
+		}
+	</style>
+<title>Lab 3</title>
+</head>
+
+<body>
+	<table border="1" cellpadding="15" bordercolor="#737373" align="center">
+	<thead>
+		<tr>
+			<th colspan="3"><h3>About--110306036</h3></th>
+		</tr>
+		</thead>
+		<tbody>
+			<form method="get">
+				<tr>
+					<td  rowspan="3"><img src="R.jpg"  width="240" height="135" alt="Pic From Google"><br><br>
+					<figure align="center">Personal Photo</figure>
+					</td>
+					<td colspan="2"><strong>Name:</strong> 
+						<input type="text" name="name" alt="Please enter your name" placeholder="Name" maxlength="30" required autofocus><br><br>
+						<strong>Gender: </strong>
+						<input type="radio" name="gender" value="Male">Male
+						<input type="radio" name="gender" value="female">Female
+						<input type="radio" name="gender" value="other">Other
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<strong><label>County:</label></strong>
+						<select name="County"> 
+							<option value="Taipei">Taipei</option><option value="Tainan">Tainan</option><option value="Taichung">Taichung</option>
+							<option value="Taoyuan">Taoyuan</option>
+						</select>
+					</td>
+					<td>
+						<strong><label>Birthday:</label></strong>
+						<input type="date" name="birthday" required>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2"><strong><label>E-mail:</label></strong>
+					<input type="email" name="email" placeholder="example@example.com" maxlength="50" required>
+					</td>
+				</tr>
+				<tr>
+					<td><strong><label>Hobby</label></strong></td>
+					<td colspan="2">
+						<input type="checkbox" name="hobby" value="Swimming"> Swimming
+						<input type="checkbox" name="hobby" value="Volleyball"> Volleyball
+						<input type="checkbox" name="hobby" value="Movie"> Movie
+						<input type="checkbox" name="hobby" value="Game"> Game
+						<input type="checkbox" name="hobby" value="Sleep"> Sleeping
+					</td>
+				</tr>
+				<tr>
+					<td><strong><label>Skill</label></strong></td>
+					<td colspan="2">
+						<input type="checkbox" name="skill" value="Java">Java
+						<input type="checkbox" name="skill" value="HTML">HTML
+						<input type="checkbox" name="skill" value="Python">Python
+						<input type="checkbox" name="skill" value="Microsoft Office">Microsoft Office
+						<input type="checkbox" name="skill" value="Premiere">Adeobe Premiere
+					</td>
+				</tr>
+				<tr>
+					<td><span><label>Say Something</label></span></td>
+					<td colspan="2">
+						<textarea rows="3" cols="55" placeholder="Say something here."></textarea>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="3" align="center">
+						<input type="submit" name="Submit">
+						<input type="reset" name="重設">
+					</td>
+				</tr>
+			</form>
+		</tbody>
+	</table>
+</body>
+</html>
